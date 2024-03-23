@@ -1,0 +1,23 @@
+
+
+.about-us {
+    text-align: center;
+    padding: 20px;
+    width: 500px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us h1 {
+    color: #333;
+    font-size: 36px;
+  
+}
+
+.about-us p {
+    
+    font-size: 18px;
+}
+
+

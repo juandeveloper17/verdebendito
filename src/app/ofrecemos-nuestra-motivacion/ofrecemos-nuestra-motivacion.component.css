@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    
+    background-color: rgba(255, 255, 255, 0.5); /* Color de fondo blanco con 50% de transparencia */
+    background-blend-mode: multiply; /* Mezcla el color de fondo con la imagen */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 40vh;
+    background-color: #ffffff;
+    
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Añade un poco de padding para dispositivos móviles */
+}
+
+.column {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.column:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.h11 {
+    font-size: 28px;
+    color: #444444;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    transform: translateY(-20px);
+}
+
+
+/* Estilos para dispositivos móviles y tabletas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Cambia la disposición a columna para pantallas pequeñas */
+        height: auto; /* Ajusta la altura para que se ajuste al contenido */
+    }
+
+    .column {
+        width: 100%; /* Hace que las columnas ocupen todo el ancho en pantallas pequeñas */
+        padding: 10px; /* Reduce el padding para pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 20px; /* Reduce el tamaño de fuente para títulos */
+    }
+
+    .h11 {
+        font-size: 24px; /* Ajusta el tamaño de fuente para títulos personalizados */
+    }
+
+    p {
+        font-size: 14px; /* Reduce el tamaño de fuente para el texto */
+    }
+}

@@ -1,0 +1,62 @@
+.container {
+    display: flex; /* Habilita Flexbox */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    padding: 20px; /* Añade un poco de espacio alrededor del contenedor */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text-content {
+    flex: 1; /* Permite que el contenido de texto ocupe la mayor parte del espacio disponible */
+    margin-right: 20px; /* Añade un poco de espacio a la derecha del contenido de texto */
+}
+
+.redes {
+    width: 500px; /* Asegura que la imagen tenga un tamaño fijo */
+    height: 500px;
+    border-radius: 20px;
+}
+
+h2 , p{
+    text-align: center;
+    
+}
+h2{
+    color: #5AC134;
+}
+
+
+/* Estilos para hacer el diseño responsive */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.text-content {
+    max-width: 800px; /* Limita el ancho máximo del contenido de texto */
+    text-align: center;
+}
+
+.redes {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen al 100% del contenedor */
+    height: auto; /* Permite que la altura de la imagen se ajuste automáticamente */
+    margin-right: 0; /* Elimina el margen derecho para la imagen */
+    margin-bottom: 20px; /* Agrega margen inferior para separar los contenedores */
+}
+
+/* Estilos para dispositivos más pequeños */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse; /* Cambia el orden de los elementos en dispositivos pequeños */
+    }
+    .redes {
+        max-width: 100%; /* Ajusta el ancho máximo de la imagen al 100% del contenedor */
+        height: auto; /* Permite que la altura de la imagen se ajuste automáticamente */
+        margin-bottom: 20px; /* Agrega margen inferior para separar los contenedores */
+    }
+}

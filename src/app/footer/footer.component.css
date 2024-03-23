@@ -1,0 +1,23 @@
+/* styles.css */
+
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center; /* Centra el texto dentro del footer */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenido del footer */
+}
+
+.footer-content nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px; /* Espacio entre los enlaces */
+}
+
+.footer-content nav a:hover {
+    text-decoration: underline;
+}
